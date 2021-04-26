@@ -1,0 +1,124 @@
+html, body,h1,h2,h3,h4,h5,p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1,h2,h3,h4,h5,p,li,span,a {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+ /* HEADER */
+header {
+    width: 95%;
+    margin: auto;
+}
+
+nav, #ctnNavList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    margin-top: 30px;
+}
+
+#ctnNavList {
+    list-style: none;
+    margin: 0;
+    height: 100%;
+}
+
+#ctnNavList li {
+    height: 100%;
+    padding: 30px;
+}
+
+#ctnNavList li:hover {
+    border-top: 2px solid #0065FC;
+}
+
+#ctnNavList li a:active {
+    color: #F2F2F2;
+}
+
+#ctnNavList li a {
+    text-decoration: none;
+    color: #6087FB;
+    font-weight: 500;
+}
+
+#lRegister {
+    color: #0065FC !important;
+    font-weight: 700 !important;
+}
+/* BODY */
+#ctnSearchBox{
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#ctnSearchBox h1 {
+    font-size: 22px;
+    margin: 5px 0px 5px 0px;
+}
+
+#ctnSearchBox p {
+    margin: 5px 0px 5px 0px;
+}
+
+#ctnSearchBox form {
+    height: 50px;
+    border-radius: 25px;
+}
+
+#ctnSearchBox form  {
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+#ctnSearchBox form div {
+    height: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50px;
+}
+.fa-map-marker-alt {
+    color: black;
+    font-size: 20px;
+    margin: auto;
+}
+#ctnSearchBox form input {
+    height: 48px;
+    border: 0;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 0px 10px 0px 10px;
+    font: 700 14px 'Raleway';
+}
+
+#ctnSearchBox form input:focus-visible {
+    outline: none;
+}
+
+#ctnSearchBox form button {
+    height: 100%;
+    background-color: #0065FC;
+    color: #F2F2F2;
+    border: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font: 700 14px 'Raleway';
+    width: 120px;
+}
