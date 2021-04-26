@@ -141,6 +141,7 @@ nav img {
     align-items: center;
     justify-content: space-around;
     width: 60%;
+    max-width: 850px;
 }
 
 #ctnFiltres ul li {
@@ -174,7 +175,7 @@ nav img {
     margin-left: -5px;
 }
 
-.fa-money-bill-wave,.fa-male,.fa-heart,.fa-dog {
+.fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog {
     color: #0065FC;
     font-size: 20px;
     margin: auto;
@@ -204,4 +205,186 @@ nav img {
     margin: 0;
     margin-left: 10px;
 }
+
+/* HOUSE */
+
+#ctnHousing {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#ctnHousingAt {
+    width: min-content;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+#ctnHousing h2 {
+    font-size:20px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+#ctnRowHouses {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 20px 10px 0px 10px;
+    width: 800px;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ctnHouse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 220px;
+    border: 4px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.ctnHouse img {
+    width: 100%;
+    height: 100%;
+    min-height: 146px;
+    max-height: 147px;
+}
+
+.ctnHouse figcaption {
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    margin-top: -30px;
+}
+
+.ctnHouse figcaption div {
+    padding: 5px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.ctnHouse figcaption p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.ctnHouse figcaption p span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.ctnHouse h3 {
+   font-size: 16px;
+   padding-left: 10px;
+   padding-top: 10px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.empty {
+    color: #ddd8d8 !important;
+}
+
+
+#readMore {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 0;
+    font-size: 15px;
+}
+
+/* MOST FAMOUS */
+#ctnMostFamous {
+    margin: auto;
+    margin-top: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#ctnFamousTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#ctnFamousTitle h2 {
+    margin: 0;
+    font-size:20px;
+}
+
+.fa-chart-line {
+    font-size: 25px;
+}
+
+.mostFamous {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.mostFamous figure {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:30px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.last {
+    margin-bottom: 20px !important;
+}
+
+.mostFamous figure img {
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    max-height: 145px;
+    min-width: 160px;
+}
+
+.mostFamous figure figcaption {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    left: -20px;
+    padding: 10px 0 0 25px
+}
+
+.mostFamous figure figcaption p {
+    margin-top: 7px;
+    margin-bottom: 50px;
+}
+
+.mostFamous figure figcaption div {
+    position: relative;
+    top: -10px;
+}
+
 
