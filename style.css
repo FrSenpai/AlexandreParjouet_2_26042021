@@ -179,3 +179,29 @@ nav img {
     font-size: 20px;
     margin: auto;
 }
+
+#ctnInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#ctnIconInfo {
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.fa-info {
+    color: #0065FC;
+    margin: auto;
+}
+
+#ctnInfo p {
+    margin: 0;
+    margin-left: 10px;
+}
+
