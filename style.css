@@ -393,7 +393,7 @@ nav img {
     width: 95%;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -477,4 +477,40 @@ nav img {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+#ctnFooter {
+    width: 95%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 200px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 200px;
+    width: 40%;
+}
+
+footer div h3{
+    margin-bottom: 15px;
+}
+footer div a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
 }
