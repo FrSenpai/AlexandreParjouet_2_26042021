@@ -239,12 +239,14 @@ nav img {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    justify-content: space-between;
 }
 
 #ctnHousingAt {
     width: min-content;
     background-color: #F2F2F2;
     border-radius: 20px;
+    width: 60%;
 }
 
 #ctnHousing h2 {
@@ -256,13 +258,13 @@ nav img {
 #ctnRowHouses {
     display: flex;
     flex-direction: row;
-    width: 60%;
-    margin: 20px 10px 0px 10px;
-    width: 800px;
-    max-width: 800px;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
 }
 
 .ctnHouse {
@@ -270,7 +272,7 @@ nav img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 220px;
+    width: 30%;
     border: 4px solid white;
     border-radius: 15px;
     overflow: hidden;
@@ -337,7 +339,6 @@ nav img {
 
 /* MOST FAMOUS */
 #ctnMostFamous {
-    margin: auto;
     margin-top: 0;
     width: 30%;
     display: flex;
@@ -351,7 +352,7 @@ nav img {
 }
 
 #ctnFamousTitle {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -369,7 +370,7 @@ nav img {
 }
 
 .mostFamous {
-    width: 90%;
+    width: 95%;
     margin-top: 20px;
 }
 
