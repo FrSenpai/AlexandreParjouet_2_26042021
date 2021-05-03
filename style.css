@@ -33,6 +33,7 @@ nav img {
 #ctnNavList li {
     height: 100%;
     padding: 30px;
+    border-top: 2px solid transparent;
 }
 
 #ctnNavList li:hover {
