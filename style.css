@@ -559,6 +559,10 @@ footer div a {
     margin: auto;
 }
 
+#ctnNavListMobile {
+    display: none;
+}
+
 .rowLink {
     display: flex;
     flex-direction: row;
