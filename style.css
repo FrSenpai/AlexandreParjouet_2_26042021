@@ -563,15 +563,20 @@ footer div a {
     display: flex;
     flex-direction: row;
 }
+
 /* IPHONE 6/7/8+ */
 @media screen and (max-width: 414px) {
-    html,body {
+
+    html,
+    body {
         overflow: scroll;
     }
+
     header {
         margin: 0;
         width: 100%;
     }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -677,6 +682,95 @@ footer div a {
     .fa-search {
         margin: auto;
         font-size: 16px;
+    }
+
+    #ctnFiltres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    #ctnFiltres ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #ctnFiltres ul li {
+        margin: 15px 20px 0px 5px;
+    }
+
+    .fa-money-bill-wave,
+    .fa-child,
+    .fa-heart,
+    .fa-dog {
+        color: #0065FC;
+        font-size: 15px;
+        margin: auto;
+    }
+
+    #ctnIconInfo {
+        width: 15px;
+        height: 15px;
+    }
+
+    .fa-info {
+        font-size: 10px;
+    }
+
+    #ctnInfo {
+        align-items: unset;
+        margin-left: 10px;
+    }
+
+    #ctnHousing {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #ctnHousingAt, #ctnMostFamous {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #ctnHousingAt {
+        background-color: #FFFFFF;
+    }
+
+    #ctnRowHouses {
+        flex-direction: column;
+        margin: 0;
+        margin: auto;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    #ctnRowHouses figure {
+        -webkit-box-shadow: 0px  3px 6px -5px #000000;
+        box-shadow: 0px 2px 5px -2px #000000;
+    }
+
+    #ctnFamousTitle {
+        width: 90%;
+    }
+
+    .ctnHouse {
+        width: 90%;
+    }
+
+    .mostFamous figure {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0px  3px 6px -5px #000000;
+        box-shadow: 0px 3px 6px -5px #000000;
     }
 
 
