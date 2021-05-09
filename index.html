@@ -17,11 +17,18 @@
 <body>
     <header>
         <nav>
-            <img src="assets/logo/Reservia.svg" alt="Logo Reservia">
+            <div id="ctnLogo">
+                 <p><img id="logo" src="assets/logo/Reservia.svg" alt="Logo Reservia"></p>
+                 <a href="#" class="lRegister lRegisterMobile">S'inscrire</a>
+            </div>
+            <div id="ctnNavListMobile">
+                <a href="#ctnHousing">Hébergements</a>
+                <a href="#ctnActivity">Activités</a>
+            </div>
             <ul id="ctnNavList">
                 <li><a href="#ctnHousing">Hébergements</a></li>
                 <li><a href="#ctnActivity">Activités</a></li>
-                <li><a href="#" id="lRegister">S'inscrire</a></li>
+                <li><a href="#" class="lRegister">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +40,8 @@
                 <i class="fas fa-map-marker-alt"></i>
             </div>
             <input type="text" name="search" id="searchBar" />
-            <button type="submit">Rechercher</button>
+            <button class="btnSearch" type="submit">Rechercher</button>
+            <button class="btnSearchMobile"><i class="fas fa-search"></i></button>
         </form>
         <div id="ctnFiltres">
             <span>Filtres</span>

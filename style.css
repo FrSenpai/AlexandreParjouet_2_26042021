@@ -67,9 +67,13 @@ nav img {
     font-weight: 500;
 }
 
-#lRegister {
+.lRegister {
     color: #0065FC !important;
     font-weight: 700 !important;
+}
+
+.lRegisterMobile {
+    display: none;
 }
 
 /* BODY */
@@ -133,7 +137,7 @@ nav img {
     outline: none;
 }
 
-#ctnSearchBox form button {
+#ctnSearchBox form .btnSearch {
     height: 100%;
     background-color: #0065FC;
     color: #F2F2F2;
@@ -143,6 +147,10 @@ nav img {
     font: 700 14px 'Raleway';
     width: 120px;
     cursor: pointer;
+}
+
+.btnSearchMobile {
+    display: none;
 }
 
 #ctnFiltres {
@@ -290,7 +298,6 @@ nav img {
 .ctnHouse figcaption {
     width: 100%;
     background-color: white;
-    height: 80px;
     margin-top: -30px;
 }
 
@@ -555,4 +562,122 @@ footer div a {
 .rowLink {
     display: flex;
     flex-direction: row;
+}
+/* IPHONE 6/7/8+ */
+@media screen and (max-width: 414px) {
+    html,body {
+        overflow: scroll;
+    }
+    header {
+        margin: 0;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #ctnLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    .lRegisterMobile {
+        display: flex;
+        text-decoration: none;
+        color: #6087FB;
+        font-weight: 500;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    #ctnNavList {
+        display: none;
+    }
+
+    #ctnNavListMobile {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #ctnNavListMobile a {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #ctnNavListMobile a:hover {
+        color: #6087FB;
+        font-weight: 500;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #ctnSearchBox h1 {
+        margin: 0;
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    #ctnSearchBox p {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    #ctnSearchBox form {
+        margin-left: 10px;
+    }
+
+    .btnSearch {
+        display: none;
+    }
+
+    .btnSearchMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background-color: #0065FC;
+        color: #F2F2F2;
+        border: 0;
+        border-radius: 15px;
+        font: 700 14px 'Raleway';
+        cursor: pointer;
+        width: 50px;
+        position: relative;
+        left: -10px;
+    }
+
+    #searchBar {
+        width: 70%;
+    }
+
+    .fa-search {
+        margin: auto;
+        font-size: 16px;
+    }
+
+
 }
