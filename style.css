@@ -790,10 +790,12 @@ footer div a {
 
     #ctnActivityRow {
         flex-direction: column !important;
+        height: fit-content !important;
     }
 
     .rowFigure {
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .ctnActivityColumn {
@@ -829,4 +831,22 @@ footer div a {
         max-height: 125px;
     }
 
+    /* Footer  */
+
+    #ctnFooter {
+        flex-direction: column;
+        height: fit-content;
+        margin-left: 10px;
+        padding-top: 0;
+    }
+
+    #ctnFooter div {
+        margin-top: 30px;
+        width: 90%;
+        height: fit-content;
+    }
+
+    #lastDivMobile {
+        margin-bottom: 20px;
+    }
 }
