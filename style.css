@@ -453,6 +453,7 @@ nav img {
 
 .rowFigure {
     width: 20%;
+    height: 100%;
     margin: 0;
     overflow: hidden;
     -webkit-box-shadow: 0px 5px 10px -5px #000000;
@@ -514,6 +515,10 @@ nav img {
     border-top-right-radius: 15px;
 }
 
+.fullHeightImg {
+    height: 100%;
+}
+
 /* FOOTER */
 
 footer {
@@ -557,6 +562,7 @@ footer div a {
     text-decoration: none;
     color: black;
     margin: auto;
+    height: 100%;
 }
 
 #ctnNavListMobile {
