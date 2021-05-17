@@ -244,6 +244,7 @@ nav img {
     display: grid;
     grid-template-columns: 100%;
 }
+
 #ctnHousing {
     width: 95%;
     margin: auto;
@@ -345,6 +346,7 @@ nav img {
     margin-top: 20px;
     border: 0;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* MOST FAMOUS */
@@ -577,13 +579,120 @@ footer div a {
     flex-direction: row;
 }
 
+/* Tablette */
+@media screen and (max-width:1310px) {
+    #ctnFiltres {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    #ctnFiltres ul {
+        width: 80%;
+        padding:0;
+    }
+    #ctnFiltres ul li span {
+        text-align: center;
+    }
+
+    #ctnHousing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #readMore {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #ctnMostFamous {
+        margin-top: 20px;
+        width: 60%;
+        padding: 0;
+    }
+
+    .mostFamous figure figcaption p {
+        margin-bottom: 30px;
+    }
+
+    .mostFamous figure {
+        padding: 0;
+    }
+
+    #ctnHousingAt {
+        width: 90%;
+    }
+
+    #ctnActivityRow {
+        flex-wrap: wrap;
+        height: fit-content !important;
+        justify-content: space-around !important;
+    }
+
+    .rowFigure {
+        width: 45%;
+    }
+
+    .ctnActivityColumn {
+        order: 2;
+        width: 40%;
+    }
+    .ctnFirstItem {
+        height: fit-content !important;
+        max-height: 500px;
+    }
+
+    .figureLink {
+        margin: 0;
+        width: 100%;
+    }
+
+    .columnFigure {
+        margin-top: 20px;
+    }
+
+    .columnImg {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:920px) {
+    #ctnFiltres ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #ctnFiltres ul li {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #ctnNavList {
+        padding: 0;
+    }
+    #ctnNavList li {
+        padding: 0;
+        margin: 5px;
+    }
+
+    #ctnRowHouses {
+        flex-direction: column;
+    }
+
+    .ctnHouse {
+        width: 80%;
+    }
+
+    #ctnMostFamous {
+        width: 90%;
+    }
+}
+
 /* IPHONE 6/7/8+ */
 @media screen and (max-width: 414px) {
 
-    html,
-    body {
-        overflow: scroll;
-    }
 
     header {
         margin: 0;
@@ -747,7 +856,8 @@ footer div a {
         width: 100%;
     }
 
-    #ctnHousingAt, #ctnMostFamous {
+    #ctnHousingAt,
+    #ctnMostFamous {
         width: 100%;
         padding: 0;
         border-radius: 0;
@@ -767,7 +877,7 @@ footer div a {
 
 
     #ctnRowHouses figure {
-        -webkit-box-shadow: 0px  3px 6px -5px #000000;
+        -webkit-box-shadow: 0px 3px 6px -5px #000000;
         box-shadow: 0px 2px 5px -2px #000000;
     }
 
@@ -783,7 +893,7 @@ footer div a {
         width: 95%;
         margin: auto;
         margin-bottom: 15px;
-        -webkit-box-shadow: 0px  3px 6px -5px #000000;
+        -webkit-box-shadow: 0px 3px 6px -5px #000000;
         box-shadow: 0px 3px 6px -5px #000000;
     }
 
@@ -814,6 +924,7 @@ footer div a {
     .rowImg {
         height: 125px;
     }
+
     .columnImg .ctnFirstItem {
         height: fit-content !important;
     }
