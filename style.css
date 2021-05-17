@@ -240,7 +240,10 @@ nav img {
 }
 
 /* HOUSE */
-
+.contentBody {
+    display: grid;
+    grid-template-columns: 100%;
+}
 #ctnHousing {
     width: 95%;
     margin: auto;
