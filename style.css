@@ -927,6 +927,9 @@ footer div a {
         -webkit-box-shadow: 0px 3px 6px -5px #000000;
         box-shadow: 0px 3px 6px -5px #000000;
     }
+    .mostFamous figure figcaption {
+       padding: 0;
+    }
 
     #readMore {
         font-size: 16px;
