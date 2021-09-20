@@ -83,7 +83,7 @@ nav img {
     margin-top: 30px;
 }
 
-#ctnSearchBox h1 {
+#ctnSearchBox h2 {
     font-size: 22px;
     margin: 5px 0px 5px 0px;
 }
@@ -261,7 +261,7 @@ nav img {
     width: 60%;
 }
 
-#ctnHousing h2 {
+#ctnHousing h3 {
     font-size: 20px;
     margin-left: 30px;
     margin-top: 40px;
@@ -331,7 +331,7 @@ nav img {
 }
 
 
-.ctnHouse h3 {
+.ctnHouse h4 {
     font-size: 16px;
     padding-left: 10px;
     padding-top: 10px;
@@ -381,7 +381,7 @@ nav img {
     margin-top: 40px;
 }
 
-#ctnFamousTitle h2 {
+#ctnFamousTitle h3 {
     margin: 0;
     font-size: 20px;
 }
@@ -452,7 +452,7 @@ nav img {
     justify-content: center;
 }
 
-#ctnActivity h2 {
+#ctnActivity h3 {
     margin-top: 40px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -616,7 +616,7 @@ footer section a {
         width: 75%;
     }
 
-    #ctnActivity h2 {
+    #ctnActivity h3 {
         margin: auto;
         margin-bottom: 10px;
     }
@@ -778,8 +778,14 @@ footer section a {
         margin-top: 20px;
     }
 
-    #ctnNavListMobile a {
-        width: 50%;
+    #ctnNavListMobile li {
+        list-style: none;
+        width: 100%;
+    }
+
+    #ctnNavListMobile li a {
+        display: block;
+        width: 100%;
         text-align: center;
         padding-bottom: 20px;
         text-decoration: none;
@@ -789,13 +795,13 @@ footer section a {
         border-bottom: 3px solid #F2F2F2;
     }
 
-    #ctnNavListMobile a:hover {
+    #ctnNavListMobile li a:hover {
         color: #6087FB;
         font-weight: 500;
         border-bottom: 3px solid #0065FC;
     }
 
-    #ctnSearchBox h1 {
+    #ctnSearchBox h2 {
         margin: 0;
         margin-left: 10px;
         width: 85%;
@@ -942,7 +948,7 @@ footer section a {
     #ctnActivity {
         width: 90%;
     }
-    #ctnActivity h2 {
+    #ctnActivity h3 {
         margin: 0;
         margin-bottom: 20px;
     }
