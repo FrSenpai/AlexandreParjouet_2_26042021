@@ -673,11 +673,13 @@ footer div a {
 
     .rowFigure {
         width: 300px;
+        height: auto;
     }
 
     .ctnActivityColumn {
         order: 2;
         width: 40%;
+        height: auto;
     }
     .ctnFirstItem {
         max-height: 125px;
