@@ -37,6 +37,10 @@ nav,
     justify-content: space-between;
 }
 
+#ctnLogo {
+    display: none;
+}
+
 nav img {
     margin-top: 30px;
 }
@@ -747,6 +751,11 @@ footer section a {
         justify-content: space-between;
         align-items: center;
         width: 90%;
+
+    }
+
+    #mainTitle {
+        display: none;
     }
 
     #logo {
