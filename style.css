@@ -69,6 +69,11 @@ nav img {
     font-weight: 500;
 }
 
+.register {
+    font-weight: 700 !important;
+    color: #0065FC !important;
+}
+
 .lRegister {
     color: #0065FC !important;
     font-weight: 700 !important;
@@ -764,29 +769,36 @@ footer section a {
         font-size: 18px;
     }
 
-    #ctnNavList {
+    .linkMobileHidden {
         display: none;
     }
 
-    #ctnNavListMobile {
+    #ctnNavList {
 
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin: 0;
+        margin: 0 !important;
         margin: auto;
-        padding: 0;
+        padding: 0 !important;
         width: 100%;
         margin-top: 20px;
     }
 
-    #ctnNavListMobile li {
+    #ctnNavList li {
         list-style: none;
         width: 100%;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    #ctnNavListMobile li a {
+    #ctnNavList li:hover {
+        border-top: 0;
+    }
+
+    #ctnNavList li a {
         display: block;
         width: 100%;
         text-align: center;
@@ -798,7 +810,7 @@ footer section a {
         border-bottom: 3px solid #F2F2F2;
     }
 
-    #ctnNavListMobile li a:hover {
+    #ctnNavList li a:hover {
         color: #6087FB;
         font-weight: 500;
         border-bottom: 3px solid #0065FC;
