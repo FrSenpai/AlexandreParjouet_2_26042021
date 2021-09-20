@@ -109,7 +109,7 @@ nav img {
 
 }
 
-#ctnSearchBox form div {
+#ctnSearchBox form section {
     height: 100%;
     background-color: #F2F2F2;
     display: flex;
@@ -1037,6 +1037,6 @@ footer section a {
      }
 }
 
-.titleHidden {
+.hiddenTitle {
     display: none;
 }
