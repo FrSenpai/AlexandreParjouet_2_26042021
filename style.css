@@ -27,6 +27,8 @@ a {
 header {
     width: 95%;
     margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 nav,
@@ -35,10 +37,6 @@ nav,
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-#ctnLogo {
-    display: none;
 }
 
 nav img {
@@ -113,7 +111,7 @@ nav img {
 
 }
 
-#ctnSearchBox form section {
+#ctnSearchBox form div {
     height: 100%;
     background-color: #F2F2F2;
     display: flex;
@@ -751,11 +749,6 @@ footer section a {
         justify-content: space-between;
         align-items: center;
         width: 90%;
-
-    }
-
-    #mainTitle {
-        display: none;
     }
 
     #logo {
