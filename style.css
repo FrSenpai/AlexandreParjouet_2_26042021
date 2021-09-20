@@ -109,7 +109,7 @@ nav img {
 
 }
 
-#ctnSearchBox form div {
+#ctnSearchBox form section {
     height: 100%;
     background-color: #F2F2F2;
     display: flex;
@@ -571,7 +571,7 @@ footer {
     height: 200px;
 }
 
-footer div {
+footer section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -580,11 +580,11 @@ footer div {
     width: 40%;
 }
 
-footer div h3 {
+footer section h3 {
     margin-bottom: 15px;
 }
 
-footer div a {
+footer section a {
     text-decoration: none;
     color: black;
     margin-bottom: 10px;
@@ -698,7 +698,7 @@ footer div a {
     .columnImg {
         height: fit-content;
     }
-    #ctnFooter div  {
+    #ctnFooter section  {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -999,7 +999,7 @@ footer div a {
         padding-top: 0;
     }
 
-    #ctnFooter div {
+    #ctnFooter section {
         margin-top: 40px;
         width: 90%;
         height: fit-content;
