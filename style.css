@@ -27,6 +27,8 @@ a {
 header {
     width: 95%;
     margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 nav,
@@ -67,9 +69,18 @@ nav img {
     font-weight: 500;
 }
 
-#lRegister {
+.register {
+    font-weight: 700 !important;
+    color: #0065FC !important;
+}
+
+.lRegister {
     color: #0065FC !important;
     font-weight: 700 !important;
+}
+
+.lRegisterMobile {
+    display: none;
 }
 
 /* BODY */
@@ -79,7 +90,7 @@ nav img {
     margin-top: 30px;
 }
 
-#ctnSearchBox h1 {
+#ctnSearchBox h2 {
     font-size: 22px;
     margin: 5px 0px 5px 0px;
 }
@@ -133,7 +144,7 @@ nav img {
     outline: none;
 }
 
-#ctnSearchBox form button {
+#ctnSearchBox form .btnSearch {
     height: 100%;
     background-color: #0065FC;
     color: #F2F2F2;
@@ -145,6 +156,10 @@ nav img {
     cursor: pointer;
 }
 
+.btnSearchMobile {
+    display: none;
+}
+
 #ctnFiltres {
     display: flex;
     flex-direction: row;
@@ -152,8 +167,9 @@ nav img {
     justify-content: flex-start;
 }
 
-#ctnFiltres span {
+#ctnFiltres h3 {
     font-weight: 600;
+    font-size: 16px;
 }
 
 #ctnFiltres ul {
@@ -232,6 +248,10 @@ nav img {
 }
 
 /* HOUSE */
+.contentBody {
+    display: grid;
+    grid-template-columns: 100%;
+}
 
 #ctnHousing {
     width: 95%;
@@ -239,15 +259,17 @@ nav img {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    justify-content: space-between;
 }
 
 #ctnHousingAt {
     width: min-content;
     background-color: #F2F2F2;
     border-radius: 20px;
+    width: 60%;
 }
 
-#ctnHousing h2 {
+#ctnHousing h3 {
     font-size: 20px;
     margin-left: 30px;
     margin-top: 40px;
@@ -256,13 +278,13 @@ nav img {
 #ctnRowHouses {
     display: flex;
     flex-direction: row;
-    width: 60%;
-    margin: 20px 10px 0px 10px;
-    width: 800px;
-    max-width: 800px;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
 }
 
 .ctnHouse {
@@ -270,12 +292,14 @@ nav img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 220px;
+    width: 30%;
     border: 4px solid white;
     border-radius: 15px;
     overflow: hidden;
     margin: 0;
     margin-bottom: 30px;
+    -webkit-box-shadow: 0px 3px 7px -5px #000000;
+    box-shadow: 0px 3px 7px -5px #000000;
 }
 
 .ctnHouse img {
@@ -288,8 +312,14 @@ nav img {
 .ctnHouse figcaption {
     width: 100%;
     background-color: white;
-    height: 80px;
     margin-top: -30px;
+}
+
+.ctnHouse figcaption a {
+    text-decoration: none;
+}
+.ctnHouse figcaption a:visited {
+    color: initial;
 }
 
 .ctnHouse figcaption div {
@@ -309,7 +339,7 @@ nav img {
 }
 
 
-.ctnHouse h3 {
+.ctnHouse h4 {
     font-size: 16px;
     padding-left: 10px;
     padding-top: 10px;
@@ -333,11 +363,11 @@ nav img {
     margin-top: 20px;
     border: 0;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* MOST FAMOUS */
 #ctnMostFamous {
-    margin: auto;
     margin-top: 0;
     width: 30%;
     display: flex;
@@ -351,7 +381,7 @@ nav img {
 }
 
 #ctnFamousTitle {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -359,7 +389,7 @@ nav img {
     margin-top: 40px;
 }
 
-#ctnFamousTitle h2 {
+#ctnFamousTitle h3 {
     margin: 0;
     font-size: 20px;
 }
@@ -369,7 +399,7 @@ nav img {
 }
 
 .mostFamous {
-    width: 90%;
+    width: 95%;
     margin-top: 20px;
 }
 
@@ -382,13 +412,16 @@ nav img {
     margin-bottom: 30px;
     padding: 7px;
     border-radius: 20px;
+    -webkit-box-shadow: 0px 3px 7px -5px #000000;
+    box-shadow: 0px 3px 7px -5px #000000;
+    min-height: 145px;
 }
 
 .last {
     margin-bottom: 20px !important;
 }
 
-.mostFamous figure img {
+.mostFamous figure figcaption a img {
     width: 40%;
     background-color: white;
     border-radius: 20px;
@@ -396,7 +429,7 @@ nav img {
     min-width: 160px;
 }
 
-.mostFamous figure figcaption {
+.mostFamous figure .ctnFamousItem {
     width: 100%;
     background-color: white;
     position: relative;
@@ -404,12 +437,12 @@ nav img {
     padding: 10px 0 0 25px
 }
 
-.mostFamous figure figcaption p {
+.mostFamous figure .ctnFamousItem p {
     margin-top: 7px;
     margin-bottom: 50px;
 }
 
-.mostFamous figure figcaption div {
+.mostFamous figure .ctnFamousItem div {
     position: relative;
     top: -10px;
 }
@@ -427,7 +460,7 @@ nav img {
     justify-content: center;
 }
 
-#ctnActivity h2 {
+#ctnActivity h3 {
     margin-top: 40px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -445,6 +478,7 @@ nav img {
 
 .rowFigure {
     width: 20%;
+    height: 100%;
     margin: 0;
     overflow: hidden;
     -webkit-box-shadow: 0px 5px 10px -5px #000000;
@@ -454,7 +488,24 @@ nav img {
     flex-direction: column;
     align-items: flex-start;
 }
+.rowFigure figcaption {
+    width: 100%;
+    margin-left: 0 !important;
+    height: 100% !important;
+}
 
+.rowFigure figcaption a p {
+    margin-left: 10px;
+}
+.columnFigure figcaption {
+    width: 100%;
+    margin-left: 0 !important;
+    height: 100% !important;
+}
+
+.columnFigure figcaption a p {
+    margin-left: 10px;
+}
 .rowImg {
     height: 400px;
     border-top-left-radius: 15px;
@@ -506,6 +557,10 @@ nav img {
     border-top-right-radius: 15px;
 }
 
+.fullHeightImg {
+    height: 100%;
+}
+
 /* FOOTER */
 
 footer {
@@ -514,7 +569,7 @@ footer {
 }
 
 #ctnFooter {
-    width: 95%;
+    width: 90%;
     margin: auto;
     padding-top: 40px;
     display: flex;
@@ -524,7 +579,7 @@ footer {
     height: 200px;
 }
 
-footer div {
+footer section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -533,11 +588,11 @@ footer div {
     width: 40%;
 }
 
-footer div h3 {
+footer section h3 {
     margin-bottom: 15px;
 }
 
-footer div a {
+footer section a {
     text-decoration: none;
     color: black;
     margin-bottom: 10px;
@@ -548,9 +603,454 @@ footer div a {
     flex-direction: column;
     text-decoration: none;
     color: black;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#ctnNavListMobile {
+    display: none;
 }
 
 .rowLink {
     display: flex;
     flex-direction: row;
+}
+
+/* Tablette */
+@media screen and (max-width:1310px) {
+
+    #ctnActivity {
+        width: 75%;
+    }
+
+    #ctnActivity h3 {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+
+    #ctnFiltres {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    #ctnFiltres ul {
+        width: 80%;
+        padding:0;
+    }
+    #ctnFiltres ul li span {
+        text-align: center;
+    }
+
+    #ctnHousing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #readMore {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #ctnMostFamous {
+        margin-top: 20px;
+        width: 60%;
+        padding: 0;
+    }
+
+    .mostFamous figure .ctnFamousItem p {
+        margin-bottom: 30px;
+    }
+
+    .mostFamous figure {
+        padding: 0;
+    }
+
+    #ctnHousingAt {
+        width: 90%;
+    }
+
+    #ctnActivityRow {
+        flex-wrap: wrap;
+        height: fit-content !important;
+        justify-content: space-around !important;
+    }
+
+    .rowFigure {
+        width: 300px;
+        height: auto;
+    }
+
+    .ctnActivityColumn {
+        order: 2;
+        width: 40%;
+        height: auto;
+    }
+    .ctnFirstItem {
+        max-height: 125px;
+    }
+
+    .figureLink {
+        margin: 0;
+        width: 100%;
+    }
+
+    .columnFigure {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .columnImg {
+        height: fit-content;
+    }
+    #ctnFooter section  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:920px) {
+    #ctnFiltres ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #ctnFiltres ul li {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #ctnActivity {
+        width: 100%;
+    }
+ } 
+
+
+
+/* IPHONE 6/7/8+ */
+@media screen and (max-width: 650px) {
+    header {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #ctnLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    .lRegisterMobile {
+        display: flex;
+        text-decoration: none;
+        color: #6087FB;
+        font-weight: 500;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .linkMobileHidden {
+        display: none;
+    }
+
+    #ctnNavList {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 !important;
+        margin: auto;
+        padding: 0 !important;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #ctnNavList li {
+        list-style: none;
+        width: 100%;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #ctnNavList li:hover {
+        border-top: 0;
+    }
+
+    #ctnNavList li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #ctnNavList li a:hover {
+        color: #6087FB;
+        font-weight: 500;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #ctnSearchBox h2 {
+        margin: 0;
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    #ctnSearchBox p {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    #ctnSearchBox form {
+        margin-left: 10px;
+    }
+
+    .btnSearch {
+        display: none;
+    }
+
+    .btnSearchMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background-color: #0065FC;
+        color: #F2F2F2;
+        border: 0;
+        border-radius: 15px;
+        font: 700 14px 'Raleway';
+        cursor: pointer;
+        width: 50px;
+        position: relative;
+        left: -10px;
+    }
+
+    #searchBar {
+        width: 70%;
+    }
+
+    .fa-search {
+        margin: auto;
+        font-size: 16px;
+    }
+
+    #ctnFiltres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    #ctnFiltres ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #ctnFiltres ul li {
+        margin: 15px 20px 0px 5px;
+    }
+
+    .fa-money-bill-wave,
+    .fa-child,
+    .fa-heart,
+    .fa-dog {
+        color: #0065FC;
+        font-size: 15px;
+        margin: auto;
+    }
+
+    #ctnIconInfo {
+        width: 15px;
+        height: 15px;
+    }
+
+    .fa-info {
+        font-size: 10px;
+    }
+
+    #ctnInfo {
+        align-items: unset;
+        margin-left: 10px;
+    }
+
+    #ctnHousing {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #ctnHousingAt,
+    #ctnMostFamous {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #ctnHousingAt {
+        background-color: #FFFFFF;
+    }
+
+    #ctnRowHouses {
+        flex-direction: column;
+        margin: 0;
+        margin: auto;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+
+    #ctnRowHouses figure {
+        -webkit-box-shadow: 0px 3px 6px -5px #000000;
+        box-shadow: 0px 2px 5px -2px #000000;
+    }
+
+    #ctnFamousTitle {
+        width: 90%;
+    }
+
+    .ctnHouse {
+        width: 95%;
+    }
+
+    .mostFamous figure {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0px 3px 6px -5px #000000;
+        box-shadow: 0px 3px 6px -5px #000000;
+    }
+    .mostFamous figure figcaption {
+       padding: 0;
+    }
+
+    #readMore {
+        font-size: 16px;
+        background-color: transparent;
+        margin-top: 0;
+    }
+
+    #ctnActivity {
+        width: 90%;
+    }
+    #ctnActivity h3 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    #ctnActivityRow {
+        flex-direction: column !important;
+        height: fit-content !important;
+    }
+
+    .rowFigure {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .ctnActivityColumn {
+        width: 100%;
+    }
+
+    .rowImg {
+        height: 125px;
+    }
+
+    .columnImg .ctnFirstItem {
+        height: fit-content !important;
+    }
+
+    .columnFigure {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .figureLink {
+        width: 100%;
+        max-height: fit-content !important;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .activityMobile {
+        max-height: 150px;
+
+    }
+
+    .columnImg {
+        object-fit: cover;
+        max-height: 125px;
+    }
+
+    /* Footer  */
+
+    #ctnFooter {
+        flex-direction: column;
+        height: fit-content;
+        margin-left: 20px;
+        padding-top: 0;
+    }
+
+    #ctnFooter section {
+        margin-top: 40px;
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #lastDivMobile {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .mostFamous figure .ctnFamousItem {
+        padding: 5px 0px 0px 10px !important;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .mostFamous figure .ctnFamousItem {
+        padding: 5px 0px 0px 5px !important;
+    }
+
+    .mostFamous figure figcaption a img {
+        max-height: none;
+        min-width: 100px;
+     }
+}
+
+.hiddenTitle {
+    display: none;
 }

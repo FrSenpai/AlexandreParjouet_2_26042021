@@ -16,299 +16,356 @@
 
 <body>
     <header>
+        <h1 class="hiddenTitle">Reservia</h1>
         <nav>
-            <img src="assets/logo/Reservia.svg" alt="Logo Reservia">
+            <section id="ctnLogo">
+                <h2><img id="logo" src="assets/logo/Reservia.svg" alt="Logo Reservia"></h2>
+                <a href="#" class="lRegister lRegisterMobile">S'inscrire</a>
+            </section>
             <ul id="ctnNavList">
                 <li><a href="#ctnHousing">Hébergements</a></li>
                 <li><a href="#ctnActivity">Activités</a></li>
-                <li><a href="#" id="lRegister">S'inscrire</a></li>
+                <li class="linkMobileHidden"><a href="#" class="register">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
-    <div id="ctnSearchBox">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <form>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <input type="text" name="search" id="searchBar" />
-            <button type="submit">Rechercher</button>
-        </form>
-        <div id="ctnFiltres">
-            <span>Filtres</span>
-            <ul>
-                <li>
-                    <div class="ctnIcons">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <span>Économique</span>
-                </li>
-                <li>
-                    <div class="ctnIcons">
-                        <i class="fas fa-child"></i>
-                    </div>
-                    <span>Familial</span>
-                </li>
-                <li>
-                    <div class="ctnIcons">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <span>Romantique</span>
-                </li>
-                <li>
-                    <div class="ctnIcons">
-                        <i class="fas fa-dog"></i>
-                    </div>
-                    <span>Animaux autorisés</span>
-                </li>
-            </ul>
-        </div>
-        <div id="ctnInfo">
-            <div id="ctnIconInfo">
-                <i class="fas fa-info"></i>
-            </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </div>
-    <section id="ctnHousing">
-        <div id="ctnHousingAt">
-            <h2>Hébergements à Marseille</h2>
-            <div id="ctnRowHouses">
-                <figure class="ctnHouse">
-                    <a class="figureLink" href="">
-                        <img src="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="House img">
-                        <figcaption>
-                            <h3>Auberge de la canebière</h3>
-                            <p>Nuit à partir de <span>25€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star empty"></i>
-                            </div>
+    <main class="contentBody">
+        <section id="ctnSearchBox">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <input type="text" name="search" id="searchBar" />
+                <button class="btnSearch" type="submit">Rechercher</button>
+                <button class="btnSearchMobile"><i class="fas fa-search"></i></button>
+            </form>
+            <section id="ctnFiltres">
+                <h3>Filtres</h3>
+                <ul>
+                    <li>
+                        <div class="ctnIcons">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <span>Économique</span>
+                    </li>
+                    <li>
+                        <div class="ctnIcons">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <span>Familial</span>
+                    </li>
+                    <li>
+                        <div class="ctnIcons">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <span>Romantique</span>
+                    </li>
+                    <li>
+                        <div class="ctnIcons">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <span>Animaux autorisés</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="ctnInfo">
+                <h3 class="hiddenTitle">Logements dispos</h3>
+                <div id="ctnIconInfo">
+                    <i class="fas fa-info"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>
+        </section>
+        <section id="ctnHousing">
+            <h2 class="hiddenTitle">housing</h2>
+            <section id="ctnHousingAt">
+                <h3>Hébergements à Marseille</h3>
+                <section id="ctnRowHouses">
+                    <h4 class="hiddenTitle">Liste hébergements</h4>
+                    <figure class="ctnHouse">
+                        <figcaption class="figureLink">
+                            <a href="">
+                                <img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                    alt="House img">
+                                <h4>Auberge de la canebière</h4>
+                                <p>Nuit à partir de <span>25€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star empty"></i>
+                                </div>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="ctnHouse">
-                    <a class="figureLink" href="">
-                        <img src="assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="House img">
-                        <figcaption>
-                            <h3>Hôtel du port</h3>
-                            <p>Nuit à partir de 52<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                    </figure>
+                    <figure class="ctnHouse">
+                        <figcaption class="figureLink">
+                            <a href="">
+                                <img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                    alt="House img">
+                                <h4>Hôtel du port</h4>
+                                <p>Nuit à partir de 52<span>€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="ctnHouse">
-                    <a class="figureLink" href="">
-                        <img src="assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="House img">
-                        <figcaption>
-                            <h3>Hôtel Les mouettes</h3>
-                            <p>Nuit à partir de 76<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star empty"></i>
-                            </div>
+                    </figure>
+                    <figure class="ctnHouse">
+                        <figcaption class="figureLink">
+                            <a href="">
+                                <img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                    alt="House img">
+                                <h4>Hôtel Les mouettes</h4>
+                                <p>Nuit à partir de 76<span>€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star empty"></i>
+                                </div>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="ctnHouse">
-                    <a class="figureLink" href="">
-                        <img src="assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="House img">
-                        <figcaption>
-                            <h3>Hôtel de la mer</h3>
-                            <p>Nuit à partir de 46<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star empty"></i>
-                                <i class="fas fa-star empty"></i>
-                            </div>
+                    </figure>
+                    <figure class="ctnHouse">
+                        <figcaption class="figureLink">
+                            <a href="">
+                                <img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                    alt="House img">
+
+                                <h4>Hôtel de la mer</h4>
+                                <p>Nuit à partir de 46<span>€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    <i class="fas fa-star empty"></i>
+                                </div>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="ctnHouse">
-                    <a class="figureLink" href="">
-                        <img src="assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="House img">
-                        <figcaption>
-                            <h3>Auberge Le Panier</h3>
-                            <p>Nuit à partir de <span>23€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star empty"></i>
-                            </div>
+                    </figure>
+                    <figure class="ctnHouse">
+                        <figcaption class="figureLink">
+                            <a class="ctnLinkHouse" href="">
+                                <img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                    alt="House img">
+                                <h4>Auberge Le Panier</h4>
+                                <p>Nuit à partir de <span>23€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star empty"></i>
+                                </div>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="ctnHouse">
-                    <a class="figureLink" href="">
-                        <img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="House img">
-                        <figcaption>
-                            <h3>Hôtel chez Amina</h3>
-                            <p>Nuit à partir de 96<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                    </figure>
+                    <figure class="ctnHouse">
+                        <figcaption class="figureLink">
+                            <a class="ctnLinkHouse" href="">
+                                <img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                    alt="House img">
+
+                                <h4>Hôtel chez Amina</h4>
+                                <p>Nuit à partir de 96<span>€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <button id="readMore">
-                Afficher plus
-            </button>
-        </div>
-        <div id="ctnMostFamous">
-            <div id="ctnFamousTitle">
-                <h2>Les plus populaires</h2>
-                <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="mostFamous">
-                <figure>
-                    <a class="figureLink rowLink" href="">
-                        <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="Most famous img">
+                    </figure>
+                </section>
+                <button id="readMore">
+                    Afficher plus
+                </button>
+            </section>
+            <section id="ctnMostFamous">
+                <h2 class="hiddenTitle">Section populaire</h2>
+                <section id="ctnFamousTitle">
+                    <h3>Les plus populaires</h3>
+                    <i class="fas fa-chart-line"></i>
+                </section>
+                <section class="mostFamous">
+                    <h4 class="hiddenTitle">Liste most famous</h4>
+                    <figure>
                         <figcaption>
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de 128<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                            <a class="figureLink rowLink" href="">
+                                <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                    alt="Most famous img">
+                                <section class="ctnFamousItem">
+                                    <h4>Hôtel Le soleil du matin</h4>
+                                    <p>Nuit à partir de 128<span>€</span></p>
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </section>
+                            </a>
                         </figcaption>
-                    </a>
+
+
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            <a class="figureLink rowLink" href="">
+                                <img src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                    alt="Most famous img">
+                                <section class="ctnFamousItem">
+                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                    <p>Nuit à partir de 71<span>€</span></p>
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star empty"></i>
+                                    </div>
+                                </section>
+                            </a>
+                        </figcaption>
+
+                    </figure>
+                    <figure class="last">
+                        <figcaption>
+                            <a class="figureLink rowLink" href="">
+                                <img src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                    alt="Most famous img">
+                                <section class="ctnFamousItem">
+                                    <h4>Hôtel Tout bleu et Blanc</h4>
+                                    <p>Nuit à partir de 68<span>€</span></p>
+                                    <div>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star empty"></i>
+                                    </div>
+                                </section>
+                            </a>
+                        </figcaption>
+
+                    </figure>
+                </section>
+            </section>
+        </section>
+        <section id="ctnActivity">
+            <h3>Activités à Marseille</h3>
+            <section id="ctnActivityRow">
+                <h4 class="hiddenTitle">Liste activités</h4>
+                <figure class="rowFigure">
+                    <figcaption>
+                        <a class="figureLink activityMobile" href="">
+                            <img class="columnImg fullHeightImg"
+                                src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                alt="Photo activité 1">
+                            <p>Vieux Port</p>
+                        </a>
+                    </figcaption>
 
                 </figure>
-                <figure>
-                    <a class="figureLink rowLink" href="">
-                        <img src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                            alt="Most famous img">
+                <section class="ctnActivityColumn">
+                    <h4 class="hiddenTitle">Liste activité en colonne</h4>
+                    <figure class="columnFigure">
                         <figcaption>
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p>Nuit à partir de 71<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star empty"></i>
-                            </div>
+                            <a class="figureLink activityMobile" href="">
+                                <img class="columnImg ctnFirstItem"
+                                    src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                    alt="Photo activité 1">
+                                <p>Fort de pomègues</p>
+                            </a>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="last">
-                    <a class="figureLink rowLink" href="">
-                        <img src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            alt="Most famous img">
+
+                    </figure>
+                    <figure class="columnFigure">
                         <figcaption>
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de 68<span>€</span></p>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star empty"></i>
-                            </div>
+                            <a class="figureLink activityMobile" href="">
+                                <img class="columnImg"
+                                    src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                    alt="Photo activité 1">
+                                <p>Îles du Frioul</p>
+                            </a>
                         </figcaption>
-                    </a>
+
+                    </figure>
+                </section>
+                <figure class="rowFigure">
+                    <figcaption>
+                        <a class="figureLink activityMobile" href="">
+                            <img class="columnImg fullHeightImg"
+                                src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                alt="Photo activité 1">
+                            <p>Parc National des Calanques</p>
+                        </a>
+                    </figcaption>
+
                 </figure>
-            </div>
-        </div>
-    </section>
-    <section id="ctnActivity">
-        <h2>Activités à Marseille</h2>
-        <div id="ctnActivityRow">
-            <figure class="rowFigure">
-                <a class="figureLink" href="">
-                    <img class="rowImg" src="/assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                        alt="Photo activité 1">
-                    <figcaption>Vieux Port</figcaption>
-                </a>
-            </figure>
-            <div class="ctnActivityColumn">
-                <figure class="columnFigure">
-                    <a class="figureLink" href="">
-                        <img class="columnImg ctnFirstItem"
-                            src="/assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Photo activité 1">
-                        <figcaption>Fort de pomègues</figcaption>
-                    </a>
-                </figure>
-                <figure class="columnFigure">
-                    <a class="figureLink" href="">
-                        <img class="columnImg" src="/assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Photo activité 1">
-                        <figcaption>Îles du Frioul</figcaption>
-                    </a>
-                </figure>
-            </div>
-            <figure class="rowFigure">
-                <a class="figureLink" href="">
-                    <img class="rowImg" src="/assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Photo activité 1">
-                    <figcaption>Parc National des Calanques</figcaption>
-                </a>
-            </figure>
-            <div class="ctnActivityColumn">
-                <figure class="columnFigure">
-                    <a class="figureLink" href="">
-                        <img class="columnImg" src="/assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Photo activité 1">
-                        <figcaption>Notre-Dame-de-la-Garde</figcaption>
-                    </a>
-                </figure>
-                <figure class="columnFigure" class="columnFigure">
-                    <a class="figureLink" href="">
-                        <img class="secondColumnImg ctnFirstItem"
-                            src="/assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo activité 1">
-                        <figcaption>Parc Longchamp</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-    </section>
+                <section class="ctnActivityColumn">
+                    <h4 class="hiddenTitle">Liste activité en colonne</h4>
+                    <figure class="columnFigure">
+                        <figcaption>
+                            <a class="figureLink activityMobile" href="">
+                                <img class="columnImg"
+                                    src="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Photo activité 1">
+                                <p>Notre-Dame-de-la-Garde</p>
+                            </a>
+                        </figcaption>
+
+                    </figure>
+                    <figure class="columnFigure">
+                        <figcaption>
+                            <a class="figureLink activityMobile" href="">
+                                <img class="secondColumnImg ctnFirstItem"
+                                    src="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                    alt="Photo activité 1">
+                                <p>Parc Longchamp</p>
+                            </a>
+                        </figcaption>
+
+                    </figure>
+                </section>
+            </section>
+        </section>
+    </main>
+
 
     <footer>
-        <div id="ctnFooter">
-            <div>
+        <section id="ctnFooter">
+            <h4 class="hiddenTitle">footer</h4>
+            <section>
                 <h3>A propos</h3>
                 <a href="#">Fonctionnement du site</a>
                 <a href="#">Condition générales de vente</a>
                 <a href="#">Données et confidentialité</a>
-            </div>
-            <div>
+            </section>
+            <section>
                 <h3>Nos hébergements</h3>
                 <a href="#">Charte qualité</a>
                 <a href="#">Soumettre votre hôtel</a>
-            </div>
-            <div>
+            </section>
+            <section id="lastDivMobile">
                 <h3>Assistance</h3>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
-            </div>
-        </div>
+            </section>
+        </section>
 
     </footer>
 </body>
